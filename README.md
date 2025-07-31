@@ -14,7 +14,7 @@ Install all required Python packages using pip:
 
 `pip install -r requirements.txt`
 
-### 4. Download the Flickr8k Dataset
+### 4. Download the Flickr8k Dataset (Required for LSTM Notebook)
 
 The Flickr8k dataset is required to run this notebook. It is available on [Kaggle](https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download).
 
