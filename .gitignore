@@ -1,5 +1,3 @@
-flickr8k/Flicker8k_Dataset/
-./models/
-./cached_features/*.*
-cached_features/
-models/
+LSTM/archive/Images/
+LSTM/models/
+LSTM/cached_features/
