@@ -9,55 +9,5 @@ This repository contains the code for an image captioning model trained on the F
 ### 2. Clone the Repository
 `git clone https://github.com/axiao01/Image-To-Text-Captions.git`
 
-### 3. Install Dependencies
-Install all required Python packages using pip:
-
-`pip install -r requirements.txt`
-
-### 4. Download the Flickr8k Dataset (Required for LSTM Notebook)
-
-The Flickr8k dataset is required to run this notebook. It is available on [Kaggle](https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download).
-
-Navigate to the Flickr8k Dataset page on Kaggle.
-
-Download the dataset zip file.
-
-Unzip the contents into the project directory, ensuring the following structure:
-
-````
-your_project_folder/
-├── img2text_lstm_Xiao.ipynb
-├── flickr8k/
-│   ├── Flicker8k_Dataset/  (This folder contains all the images)
-│   │   ├── image1.jpg
-│   │   ├── image2.jpg
-│   │   └── ...
-│   └── Flickr8k.token.txt  (This file contains all the captions)
-├── requirements.txt
-├── tests/                  (This folder contains test images not in the flikr8k dataset that you can use for displaying)
-│   ├──img01.png
-│   ├──img02.png
-│   └── ...
-└── (other folders like cached_features, models will be created here)
-````
-
-### 5. Running the Notebook (LSTM)
-Start Jupyter Notebook or JupyterLab from the project directory:
-
-`jupyter notebook`
-
-Open the img2text_lstm_Xiao.ipynb notebook.
-
-Run all the cells in order. The notebook will automatically:
-
-- Download necessary NLTK data.
-
-- Build the vocabulary.
-
-- Pre-extract and cache image features using a pre-trained ResNet-50.
-
-- Train the Encoder-Decoder model.
-
-- Generate a caption for a sample image.
-
-- You can change the training parameters in the Setup and Configureation section
+### 3. Go to the desired sub-folder for each different decoders
+Since this repository contains three different choices of decoder models, the project files for each different one is in its corresponding sub-folder. To run each choice of decoder, `cd` to the correct sub-folder. For example, `cd LSTM`. Each sub-folder contains its own  `requirements.txt` and `README.md` necessary for the sub-project.
