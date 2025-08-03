@@ -27,12 +27,12 @@ Unzip the contents into the project directory, ensuring the following structure:
 ````
 your_project_folder/
 ├── img2text_lstm_Xiao.ipynb
-├── flickr8k/
-│   ├── Flicker8k_Dataset/  (This folder contains all the images)
+├── archive/
+│   ├── Images/  (This folder contains all the images)
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
 │   │   └── ...
-│   └── Flickr8k.token.txt  (This file contains all the captions)
+│   └── captions.txt  (This file contains all the captions)
 ├── requirements.txt
 ├── tests/                  (This folder contains test images not in the flikr8k dataset that you can use for displaying)
 │   ├──img01.png
