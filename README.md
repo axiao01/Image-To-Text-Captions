@@ -14,7 +14,7 @@ Install all required Python packages using pip:
 
 `pip install -r requirements.txt`
 
-### 4. Download the Flickr8k Dataset (Required for LSTM Notebook)
+### 4. Download the Flickr8k Dataset (Required for Transformer Notebook)
 
 The Flickr8k dataset is required to run this notebook. It is available on [Kaggle](https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download).
 
@@ -26,38 +26,40 @@ Unzip the contents into the project directory, ensuring the following structure:
 
 ````
 your_project_folder/
-├── img2text_lstm_Xiao.ipynb
-├── flickr8k/
-│   ├── Flicker8k_Dataset/  (This folder contains all the images)
+├── Img2Text_Final_Optimized.ipynb
+├── archive/
+│   ├── Images/                 (This folder contains all the input images)
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
 │   │   └── ...
-│   └── Flickr8k.token.txt  (This file contains all the captions)
-├── requirements.txt
-├── tests/                  (This folder contains test images not in the flikr8k dataset that you can use for displaying)
-│   ├──img01.png
-│   ├──img02.png
+│   └── captions.txt           (This file contains image-caption pairs)
+├── TestPic/                   (Optional: contains custom images for inference)
+│   ├── example1.png
 │   └── ...
-└── (other folders like cached_features, models will be created here)
+├── requirements.txt
+└── (other folders for outputs such as models/, logs/, cached_features/, etc.)
 ````
 
-### 5. Running the Notebook (LSTM)
+### 5. Running the Notebook (Transformer)
 Start Jupyter Notebook or JupyterLab from the project directory:
 
-`jupyter notebook`
-
-Open the img2text_lstm_Xiao.ipynb notebook.
+Open the Img2Text_Final_Optimized.ipynb notebook.
 
 Run all the cells in order. The notebook will automatically:
 
 - Download necessary NLTK data.
 
-- Build the vocabulary.
+- Build a custom vocabulary from image captions.
 
-- Pre-extract and cache image features using a pre-trained ResNet-50.
+- Apply data augmentation and load the Flickr dataset.
 
-- Train the Encoder-Decoder model.
+- Extract image features using a pre-trained ResNet-50 model.
 
-- Generate a caption for a sample image.
+- Train a Transformer Decoder model for caption generation.
 
-- You can change the training parameters in the Setup and Configureation section
+- Generate captions for sample images.
+
+- Evaluate results using BLEU score.
+
+You can customize training parameters in the Setup and Configuration section.
+
