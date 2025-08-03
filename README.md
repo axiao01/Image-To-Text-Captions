@@ -70,19 +70,19 @@ Open the Img2Text_Final_Optimized.ipynb notebook.
 
 Run all the cells in order. The notebook will automatically:
 
-Download necessary NLTK data.
+- Download necessary NLTK data.
 
-Build a custom vocabulary from image captions.
+- Build a custom vocabulary from image captions.
 
-Apply data augmentation and load the Flickr dataset.
+- Apply data augmentation and load the Flickr dataset.
 
-Extract image features using a pre-trained ResNet-50 model.
+- Extract image features using a pre-trained ResNet-50 model.
 
-Train a Transformer Decoder model for caption generation.
+- Train a Transformer Decoder model for caption generation.
 
-Generate captions for sample images.
+- Generate captions for sample images.
 
-Evaluate results using BLEU score.
+- Evaluate results using BLEU score.
 
 You can customize training parameters in the Setup and Configuration section.
 
