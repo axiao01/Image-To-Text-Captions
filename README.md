@@ -41,29 +41,7 @@ your_project_folder/
 └── (other folders like cached_features, models will be created here)
 ````
 
-### 5. Running the Notebook (LSTM)
-Start Jupyter Notebook or JupyterLab from the project directory:
-
-`jupyter notebook`
-
-Open the img2text_lstm_Xiao.ipynb notebook.
-
-Run all the cells in order. The notebook will automatically:
-
-- Download necessary NLTK data.
-
-- Build the vocabulary.
-
-- Pre-extract and cache image features using a pre-trained ResNet-50.
-
-- Train the Encoder-Decoder model.
-
-- Generate a caption for a sample image.
-
-- You can change the training parameters in the Setup and Configureation section
-
-
-### 6. Running the Notebook (Transformer)
+### 5. Running the Notebook (Transformer)
 Start Jupyter Notebook or JupyterLab from the project directory:
 
 Open the Img2Text_Final_Optimized.ipynb notebook.
