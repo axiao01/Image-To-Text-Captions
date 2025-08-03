@@ -61,3 +61,28 @@ Run all the cells in order. The notebook will automatically:
 - Generate a caption for a sample image.
 
 - You can change the training parameters in the Setup and Configureation section
+
+
+### 6. Running the Notebook (Transformer)
+Start Jupyter Notebook or JupyterLab from the project directory:
+
+Open the Img2Text_Final_Optimized.ipynb notebook.
+
+Run all the cells in order. The notebook will automatically:
+
+Download necessary NLTK data.
+
+Build a custom vocabulary from image captions.
+
+Apply data augmentation and load the Flickr dataset.
+
+Extract image features using a pre-trained ResNet-50 model.
+
+Train a Transformer Decoder model for caption generation.
+
+Generate captions for sample images.
+
+Evaluate results using BLEU score.
+
+You can customize training parameters in the Setup and Configuration section.
+
