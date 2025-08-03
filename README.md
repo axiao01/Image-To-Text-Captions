@@ -26,19 +26,18 @@ Unzip the contents into the project directory, ensuring the following structure:
 
 ````
 your_project_folder/
-├── img2text_lstm_Xiao.ipynb
-├── flickr8k/
-│   ├── Flicker8k_Dataset/  (This folder contains all the images)
+├── Img2Text_Final_Optimized.ipynb
+├── archive/
+│   ├── Images/                 (This folder contains all the input images)
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
 │   │   └── ...
-│   └── Flickr8k.token.txt  (This file contains all the captions)
-├── requirements.txt
-├── tests/                  (This folder contains test images not in the flikr8k dataset that you can use for displaying)
-│   ├──img01.png
-│   ├──img02.png
+│   └── captions.txt           (This file contains image-caption pairs)
+├── TestPic/                   (Optional: contains custom images for inference)
+│   ├── example1.png
 │   └── ...
-└── (other folders like cached_features, models will be created here)
+├── requirements.txt
+└── (other folders for outputs such as models/, logs/, cached_features/, etc.)
 ````
 
 ### 5. Running the Notebook (Transformer)
