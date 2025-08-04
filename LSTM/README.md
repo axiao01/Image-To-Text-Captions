@@ -1,28 +1,13 @@
 # Image-To-Text-Captions
 
-This repository contains the code for an image captioning model trained on the Flickr8k dataset. The model uses a pre-trained ResNet-50 as an encoder to extract image features and different choices of models as a decoder to generate descriptive captions.
+This repository contains the code for an image captioning model trained on the Flickr8k dataset. This sub folder uses LSTM for decoder.
 
-### 1. Prerequisites
-- Python 3.8+
-- Jupyter Notebook or JupyterLab
-  
-### 2. Clone the Repository
-`git clone https://github.com/axiao01/Image-To-Text-Captions.git`
-
-### 3. Install Dependencies
-Install all required Python packages using pip:
-
-`pip install -r requirements.txt`
-
-### 4. Download the Flickr8k Dataset (LSTM)
+### Download the Flickr8k Dataset (Optional)
 
 The Flickr8k dataset is required to run this notebook. It is available on [Kaggle](https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download).
 
-Navigate to the Flickr8k Dataset page on Kaggle.
-
-Download the dataset zip file.
-
-Unzip the contents into the project directory, ensuring the following structure:
+The notebook will automatically download the dataset. After a successful download, your project structure would be like the structure shown below.
+You can also manually dowload the dataset from Kaggle and unzip it into this structure.
 
 ````
 your_project_folder/
@@ -41,7 +26,7 @@ your_project_folder/
 └── (other folders like cached_features, models will be created here)
 ````
 
-### 5. Running the Notebook (LSTM)
+### Running the Notebook (LSTM)
 Start Jupyter Notebook or JupyterLab from the project directory:
 
 `jupyter notebook`
@@ -50,7 +35,7 @@ Open the img2text_lstm_Xiao.ipynb notebook.
 
 Run all the cells in order. The notebook will automatically:
 
-- Download necessary NLTK data.
+- Download necessary NLTK data and dataset.
 
 - Build the vocabulary.
 
