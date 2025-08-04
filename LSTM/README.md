@@ -7,17 +7,17 @@ This repository contains the code for an image captioning model trained on the F
 The Flickr8k dataset is required to run this notebook. It is available on [Kaggle](https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download).
 
 The notebook will automatically download the dataset. After a successful download, your project structure would be like the structure shown below.
-You can also manually dowload the dataset from Kaggle and unzip it into this structure.
+You can also manually dowload the dataset from Kaggle, unzip it and rename into this structure.
 
 ````
 your_project_folder/
 ├── img2text_lstm_Xiao.ipynb
-├── archive/
-│   ├── Images/  (This folder contains all the images)
+├── flikr8k/
+│   ├── Flicker8k_Dataset/  (This folder contains all the images)
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
 │   │   └── ...
-│   └── captions.txt  (This file contains all the captions)
+│   └── Flickr8k.token.txt  (This file contains all the captions)
 ├── requirements.txt
 ├── tests/                  (This folder contains test images not in the flikr8k dataset that you can use for displaying)
 │   ├──img01.png
